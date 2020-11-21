@@ -1,0 +1,128 @@
+body, html {
+    width: 1600px;
+    margin: auto;
+    padding: 0px;
+}
+/* ___HEADER___ */ 
+.header {
+    width: 100%;
+    height: 737px;
+    background-image: url(/Images/header__background.png);
+}
+.header a {
+    color: #505050;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+}
+.header__navbar {
+    width: 100%;
+    height: 116px;
+    background: rgba(196, 196, 196, 0.1);
+    display: flex;
+   
+}
+.header__navbar__container__1 {
+    width: 14%;
+    margin-left: 15%;
+    position: relative;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar__container__2 {
+    width: 43%;
+    margin-top: 44px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    position: relative;
+    top: -23px;
+}
+#contact__us {
+    width: 234px;
+    height: 60px;
+    background: #9B9BCA;
+    color: #ffffff;
+    border-radius: 10px;
+    top: -16px;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.header__content {
+    margin-top: 196px;
+    margin-left: 15%;
+    width: 46%;
+    height: 223px;
+    
+}
+.header__info__title {
+    width: 74%;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 100%;
+    color: #696A86;
+}
+.header__info__text {
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696A86;
+}
+.services {
+    width: 100%;
+    background-color: yellow;
+    margin-top: 95px;
+}
+
+.services__title {
+    
+    width: 45%;
+    height: 143px;
+    margin: auto;
+    background-color: violet;
+}
+
+.services__boxes__container {
+    width: 68%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+}
+
+.services__box {
+    width: 23%;
+    height: 250px;
+    background-color: tomato;
+}
+
+.services__info__and__image {
+    width: 52%;
+    height: 388px;
+    background-color:blue;
+    margin: auto;
+    margin-top: 192px;
+}
+
+.expand__demo {
+    margin-top: 109px;
+    height: 1100px;
+    width: 100%;
+    background-color: blue;
+}
+
+.expand__demo__title {
+    width: 34%;
+    height: 275px;  /* to change in fit-content when content is ready*/
+    margin-left: 15%;
+    background-color: black;
+}
+
