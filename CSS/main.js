@@ -11,10 +11,34 @@ for (var i = 0; i < accordion.length; i++) {
        }
     }
 }
-(function init () {
-    for(let i=0; i< question.length; i++) {
-        question[i].addEventListener("click", accordion);
-        loadBtn.addEventListener("click", addQuestions);
-        slideBtn.addEventListener("click", changeSlide);
+
+var containerValue = document.getElementsByClassName("feature__section__slide");
+var button = document.getElementById("next__slide");
+var i = 0;
+button.addEventListener("click", slider);
+
+function slider() {
+    i++;
+    if (i >= containerValue.length){
+        i = 0;
     }
-})();
+    for (let index = 0; index < containerValue.length; index++) {
+        containerValue[index].classList.add("slide__modifier");
+    }
+    containerValue[i].classList.remove("slide__modifier");
+}
+
+
+
+var questions = document.getElementsByClassName("faq__accordion");
+var button = document.getElementById("load__more");
+var i = 0;
+
+function newQuestions() {
+  for (let i = 0; i < questions.length; i++) {
+    questions[i].classList.remove("load__later");
+    button.style.opacity = "0";
+  }
+}
+
+button.addEventListener("click", newQuestions);
