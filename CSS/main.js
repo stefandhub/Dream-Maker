@@ -1,3 +1,5 @@
+//Accordion
+
 var accordion = document.getElementsByClassName("faq__button__accordion");
 
 for (var i = 0; i < accordion.length; i++) {
@@ -11,6 +13,8 @@ for (var i = 0; i < accordion.length; i++) {
        }
     }
 }
+
+//SLIDER REVIEW
 
 var containerValue = document.getElementsByClassName("feature__section__slide");
 var button = document.getElementById("next__slide");
@@ -28,7 +32,7 @@ function slider() {
     containerValue[i].classList.remove("slide__modifier");
 }
 
-
+//LOAD MORE QUESTIONS
 
 var questions = document.getElementsByClassName("faq__accordion");
 var button = document.getElementById("load__more");
@@ -42,3 +46,44 @@ function newQuestions() {
 }
 
 button.addEventListener("click", newQuestions);
+
+
+// REGISTRATION FORM 
+
+var userName = document.getElementById("name");
+var password = document.getElementById("password");
+var signUpButton = document.getElementById("sign__in");
+
+
+//userName.addEventListener("blur", userNameValidation);
+//password.addEventListener("blur", passwordValidation);
+signUpButton.addEventListener("click", validation); 
+
+
+function userNameValidation() {
+
+    if (userName.value.length < 6) {
+        alert("Name must be at least 6 characters.");
+        userName.style.border = "solid 2px red";
+        userName.focus();
+        return false;
+    }
+    return true;
+
+}
+
+    function passwordValidation() {
+        if (password.value.length < 4 || password.value.length > 12) {
+            password.style.border = "solid 2px red";
+            alert ("Password must be at least 4 and maximum 12 characters long.");
+            password.focus();
+            return false;
+        }
+        return true;
+
+    }
+ 
+function validation() {
+    userNameValidation();
+    passwordValidation();
+}

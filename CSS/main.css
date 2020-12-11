@@ -543,3 +543,148 @@ body, html {
     border-radius: 50%;
     box-shadow: 2px 8px 15px rgba(147, 147, 147, 0.25);
 }
+
+
+/*____REGISTRATION SECTION___*/
+
+.registration__section {
+    position: relative;
+    margin-top: 530px;
+}
+
+.registration__section__title {
+    margin-left: 15%;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 140%;
+    color: #402B2B;
+}
+
+.registration__form__container {
+    width: 33.4%;
+    height: 458px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(149, 149, 201, 0.4);
+    border-radius: 10px;
+    padding-left: 173px;
+    padding-top: 108px;
+    margin-top: 82px;
+}
+
+.registration__form {
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registration__form label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #626780;
+}
+.registration__text__field input {
+    width: 56.7%;
+    height: 60px;
+    border: 1px solid #9595C9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    outline: none;
+}
+
+#name::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #626780;
+}
+
+#sign__in {
+    width: 220px;
+    height: 60px;
+    background: #9595C9;
+    border-radius: 5px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    border: rgba(255, 255, 255, 0);
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+#sign__in:hover {
+    cursor: pointer;
+}
+
+.sign__up__here {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    color: #626780;
+}
+
+.sign__up__here__red {
+    color: #F01F35;
+}
+
+.sign__up__here__red:hover {
+    cursor: pointer;
+}
+
+/*___FOOTER__SECTION__*/
+
+.footer {
+    background-image: url(/Images/Footer__background.png);
+    height: 450px;
+
+    margin-top: 132px;
+}
+
+.footer__container {
+    width: 52%;
+    height: 162px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.footer__column__title {
+    margin-bottom: 12px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+
+.footer__content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E6E6E6;
+
+}
