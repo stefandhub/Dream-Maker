@@ -893,6 +893,23 @@ body, html {
 }
 .feature__section__slide {
     left: 40px;
+    width: 70%;
+}
+.slide__text {
+    font-size: 13px;
+    line-height: 20px;
+    width: 80%;
+    height: fit-content;
+}
+.slide__username {
+    font-size: 13px;
+}
+.slide__rating {
+    font-size: 8px;
+}
+.slide__user__info {
+    height: fit-content;
+    min-width: 180px;
 }
 #next__slide {
     position: relative;
