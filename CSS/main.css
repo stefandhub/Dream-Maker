@@ -32,7 +32,7 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
-.header__navbar__container__2 {
+#header__navbar__container__2 {
     width: 43%;
     margin-top: 44px;
     margin-left: 15%;
@@ -83,6 +83,10 @@ body, html {
     line-height: 27px;
     color: #696A86;
     font-family: 'Poppins'
+}
+
+#menu__icon {
+    display: none;
 }
 
 /* __SERVICES_SECTION__*/
@@ -744,6 +748,7 @@ body, html {
     width: 100%;
     margin: auto;
     padding: 0px;
+    min-width: 400px;
 }
 
 .header__navbar {
@@ -937,7 +942,7 @@ body, html {
     width: 76.7%;
 }
 .footer__container {
-    width: 90%;
+    width: 85%;
     padding-top: 50px;
 }
 .footer__content {
@@ -963,6 +968,57 @@ body, html {
     margin-left: 0;
     margin-top: -7px;
 }
+
+/*hamburger__menu*/
+#menu__icon {
+    display: block;
+    width: 30px;
+    height:  30px;
+    position: relative;
     
+}
+
+.header__navbar__container__1 {
+    width: 80%;
+    margin-left: 15%;
+    position: relative;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu__button {
+    height: 40px;
+    top: -20px;
+    border: none;
+    box-shadow: 0px 9px 30px 9px rgba(50, 50, 50, 0.4);
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#header__navbar__container__2 {
+    display: none;
+    width: 26%;
+    margin-left: 73%;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: end;
+    border-radius: 6px 0px 0px 6px;
+}
+.header__content {
+    position: relative;
+    margin-left: 25%;
+    margin-top: 100px;
+    
+    
+}
+.header__button__mobile {
+    width: 85%;
+    height: 30px;
+    font-size: 14px;
+}
+.header__button__modifier {
+    top: 25%;
+    left: 20%;
+}
 
 }

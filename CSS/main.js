@@ -1,3 +1,4 @@
+
 //Accordion
 
 var accordion = document.getElementsByClassName("faq__button__accordion");
@@ -87,3 +88,20 @@ function validation() {
     userNameValidation();
     passwordValidation();
 }
+
+
+//MOBILE MENU
+
+var menuMobile = document.getElementById("header__navbar__container__2");
+var menuMobileButton = document.getElementById("menu__button");
+
+function openMenu() {
+    if (menuMobile.style.display === "block") {
+        menuMobile.style.display = "none"
+    } else {
+        menuMobile.style.display = "block"
+    }
+}
+
+menuMobileButton.addEventListener("click", openMenu);
+
